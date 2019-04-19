@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:alpha="0.8"
+android:background="#7aedeaea"
+tools:context=".ProjectClassFile.Register">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/exam"
+    android:alpha="0.5">
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_405sdp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_30sdp"
+        app:cardBackgroundColor="#7AEDEAEA"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_5sdp"
+        app:cardMaxElevation="@dimen/_10sdp"
+        app:cardPreventCornerOverlap="false">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="443dp"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+         <!--   <TextView
+                android:id="@+id/registrationtxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Registration"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />-->
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/register_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:hint="Name"
+                    android:singleLine="true"
+                    android:textColorHint="@color/registerText"
+                    android:textStyle="bold" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/register_mobileno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/phoneno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_phone_iphone_black_24dp"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:ems="10"
+                    android:hint="Mobile no"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColorHint="@color/registerText"
+                    android:textStyle="bold" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/register_clgname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/CollegeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_account_balance_black_24dp"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:ems="10"
+                    android:hint="College Name"
+                    android:inputType="textAutoComplete"
+                    android:singleLine="true"
+                    android:textColorHint="@color/registerText"
+                    android:textStyle="bold" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_rollno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_password"
+                    android:drawableLeft="@drawable/ic_add_location_black_24dp"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:hint="Location"
+                    android:inputType="textAutoComplete"
+                    android:singleLine="true"
+                    android:textColorHint="@color/registerText"
+                    android:textStyle="bold"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_DOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/DOB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_password"
+                    android:drawableLeft="@drawable/ic_insert_invitation_black_24dp"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:hint="DOB"
+                    android:focusableInTouchMode="false"
+                    android:windowSoftInputMode="stateHidden"
+                    android:singleLine="true"
+                    android:textColorHint="@color/registerText"
+                    android:textStyle="bold"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_password"
+                    android:drawableLeft="@drawable/ic_email_black_24dp"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:hint="Email"
+                    android:singleLine="true"
+                    android:textColorHint="@color/registerText"
+                    android:textStyle="bold" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_password"
+                android:layout_width="match_parent"
+                app:passwordToggleEnabled="true"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_password"
+                    android:drawableLeft="@drawable/ic_lock_black_24dp"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:hint="Password"
+                    android:drawableStart="@drawable/ic_lock_black_24dp"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColorHint="@color/registerText"
+                    android:textStyle="bold"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="Gender:"
+                    android:textColor="@color/registerText"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/UserGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:layout_toRightOf="@+id/gender"
+               >
+                <RadioButton
+                    android:id="@+id/radiobtn_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textColor="@color/registerText"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radiobtn_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textColor="@color/registerText"
+                    android:textStyle="bold" />
+            </RadioGroup>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        >
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/submitbutton"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_150sdp"
+        android:background="@drawable/next"
+        android:textAllCaps="true"
+        android:textColor="#021AEE"
+        android:textStyle="bold" />
+
+</FrameLayout>

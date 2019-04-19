@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.india.quizpost">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Interview.InterviewAnswerPage" />
+        <activity android:name=".Interview.ResumeTips" />
+        <activity android:name=".Interview.GroupGd" />
+        <activity android:name=".Interview.InterViewTips" />
+        <activity android:name=".Tutorial.CplusTutorial" />
+        <activity android:name=".Tutorial.CTutorial" />
+        <activity android:name=".Tutorial.IosTutorial" />
+        <activity android:name=".Tutorial.JavaTutorial" />
+        <activity android:name=".Tutorial.PythonTutorial" />
+        <activity android:name=".Tutorial.AndroidTutorial" />
+        <activity android:name=".ProjectClassFile.QuizPlay" />
+        <activity android:name=".ProjectClassFile.ExamTermsDialog" />
+        <activity android:name=".ProjectClassFile.CompanyAlertBox" />
+        <activity android:name=".ProjectClassFile.CompanyApplied_Form" />
+        <activity android:name=".ProjectClassFile.InterviewExam" />
+        <activity android:name=".ProjectClassFile.CompanyRecruitment" />
+        <activity android:name=".ProjectClassFile.TutorialActivity" />
+        <activity android:name=".ProjectClassFile.InterviewPreparation" />
+        <activity android:name=".ProjectClassFile.AboutUs" />
+        <activity android:name=".ProjectClassFile.Contactus" />
+        <activity android:name=".ProjectClassFile.Rating_Feedback" />
+        <activity android:name=".ProjectClassFile.Result" />
+        <activity android:name=".ProjectClassFile.User_Profile" />
+        <activity
+            android:name=".ProjectClassFile.DashboardNav"
+            android:label="@string/title_activity_dashboard_nav"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ProjectClassFile.Splashscreen" />
+        <activity android:name=".ProjectClassFile.Login" />
+        <activity android:name=".ProjectClassFile.Register" />
+        <activity android:name=".ProjectClassFile.ForgetPassword" />
+        <activity android:name=".Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
